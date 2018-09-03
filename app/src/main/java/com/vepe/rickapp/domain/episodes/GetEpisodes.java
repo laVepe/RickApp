@@ -1,7 +1,8 @@
-package com.vepe.rickapp.domain;
+package com.vepe.rickapp.domain.episodes;
 
 import com.vepe.rickapp.data.Repository;
 import com.vepe.rickapp.data.source.remote.model.EpisodeResult;
+import com.vepe.rickapp.domain.SingleUseCase;
 
 import io.reactivex.Single;
 

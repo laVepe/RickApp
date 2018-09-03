@@ -8,8 +8,8 @@ import com.vepe.rickapp.data.model.EpisodeObject;
 import com.vepe.rickapp.data.model.ErrorModel;
 import com.vepe.rickapp.data.model.LoadingModel;
 import com.vepe.rickapp.data.model.SuccessModel;
-import com.vepe.rickapp.domain.GetEpisodeDetail;
-import com.vepe.rickapp.domain.GetEpisodes;
+import com.vepe.rickapp.domain.episodes.GetEpisodeDetail;
+import com.vepe.rickapp.domain.episodes.GetEpisodes;
 
 import java.util.Collections;
 

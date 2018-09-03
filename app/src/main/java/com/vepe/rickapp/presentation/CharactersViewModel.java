@@ -7,9 +7,9 @@ import com.vepe.rickapp.data.model.CharacterObject;
 import com.vepe.rickapp.data.model.ErrorModel;
 import com.vepe.rickapp.data.model.LoadingModel;
 import com.vepe.rickapp.data.model.SuccessModel;
-import com.vepe.rickapp.domain.GetCharacterDetail;
-import com.vepe.rickapp.domain.GetCharacters;
-import com.vepe.rickapp.domain.GetMoreCharacters;
+import com.vepe.rickapp.domain.characters.GetCharacterDetail;
+import com.vepe.rickapp.domain.characters.GetCharacters;
+import com.vepe.rickapp.domain.characters.GetMoreCharacters;
 
 import java.util.Collections;
 

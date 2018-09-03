@@ -5,8 +5,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.vepe.rickapp.R;
 import com.vepe.rickapp.data.model.CharacterObject;
 
@@ -27,7 +30,7 @@ public class CharacterAdapter extends RecyclerView.Adapter<CharacterAdapter.View
     @NonNull
     @Override
     public CharacterAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.i_episode, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.i_character, parent, false);
         return new CharacterAdapter.ViewHolder(v);
     }
 
@@ -49,14 +52,20 @@ public class CharacterAdapter extends RecyclerView.Adapter<CharacterAdapter.View
     static class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView name;
+        private ImageView image;
 
         ViewHolder(View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.episode);
+            name = itemView.findViewById(R.id.character_name);
+            image = itemView.findViewById(R.id.character_image);
         }
 
         void bind(CharacterObject character/*, EpisodesFragment.OnEpisodeClickListener listener*/) {
-            name.setText(character.getName() + " - " + character.getSpecies());
+            name.setText(character.getName());
+            Glide.with(itemView.getContext())
+                    .load(character.getImage())
+                    .apply(new RequestOptions().override(500, 500))
+                    .into(image);
 
 //            itemView.setOnClickListener(view -> listener.onEpisodeClicked(character.getId()));
         }

@@ -18,6 +18,16 @@ public class CharacterObject {
 
     private String gender;
 
+    private String image;
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public int getId() {
         return id;
     }

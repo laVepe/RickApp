@@ -1,7 +1,8 @@
-package com.vepe.rickapp.domain;
+package com.vepe.rickapp.domain.characters;
 
 import com.vepe.rickapp.data.Repository;
 import com.vepe.rickapp.data.model.CharacterObject;
+import com.vepe.rickapp.domain.SingleUseCaseWithParams;
 
 import io.reactivex.Single;
 

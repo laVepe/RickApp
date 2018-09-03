@@ -1,7 +1,8 @@
-package com.vepe.rickapp.domain;
+package com.vepe.rickapp.domain.locations;
 
 import com.vepe.rickapp.data.Repository;
 import com.vepe.rickapp.data.model.LocationObject;
+import com.vepe.rickapp.domain.SingleUseCase;
 
 import java.util.List;
 

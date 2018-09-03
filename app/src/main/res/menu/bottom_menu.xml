@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/episodes"
         android:title="@string/episodes"
-        android:icon="@android:drawable/ic_dialog_map"/>
+        android:icon="@drawable/ic_tv"/>
 
     <item android:id="@+id/characters"
         android:title="@string/characters"
-        android:icon="@android:drawable/ic_dialog_dialer"/>
+        android:icon="@drawable/ic_group"/>
 
     <item android:id="@+id/locations"
         android:title="@string/locations"
-        android:icon="@android:drawable/ic_dialog_email"/>
+        android:icon="@drawable/ic_location"/>
 </menu>

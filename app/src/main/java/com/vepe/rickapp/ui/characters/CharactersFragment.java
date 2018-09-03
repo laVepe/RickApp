@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -89,7 +90,7 @@ public class CharactersFragment extends Fragment {
         error = view.findViewById(R.id.error);
         progress = view.findViewById(R.id.progress);
         recycler = view.findViewById(R.id.recycler);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        LinearLayoutManager layoutManager = new GridLayoutManager(getContext(), 2);
         recycler.setLayoutManager(layoutManager);
         recycler.setAdapter(new CharacterAdapter(Collections.emptyList()));
 
